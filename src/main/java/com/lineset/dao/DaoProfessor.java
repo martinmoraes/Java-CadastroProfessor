@@ -14,6 +14,7 @@ public class DaoProfessor {
 	final String LISTA_PROFESSORES = "SELECT * FROM aula.professor;";
 	final String LOCALIZA_PROFESSORE_NOME = "SELECT * FROM aula.professor WHERE nome like %?%;";
 	final String LOCAL_PROFESSORE_NOME = "SELECT *";
+	final String REMOTO_PROFESSORE_NOME = "SELECT *";
 
 	public int inserirProfessor(Professor professor) {
 		try (Connection cnx = new ConexaoMySQL().getConexion();) {
