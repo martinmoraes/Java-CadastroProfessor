@@ -13,7 +13,8 @@ public class DaoProfessor {
 	final String INSERE_PROFESSOR = "INSERT INTO aula.professor	(nome,	fone) VALUES (?, ?);";
 	final String LISTA_PROFESSORES = "SELECT * FROM aula.professor;";
 	final String LOCALIZA_PROFESSORE_NOME = "SELECT * FROM aula.professor WHERE nome like %?%;";
-
+	final String OUTRO_PROFESSORE_NOME = "SELECT * FROM aula.professor WHERE nome like %?%;";
+	
 	public int inserirProfessor(Professor professor) {
 		
 		try(Connection cnx = new ConexaoMySQL().getConexion();){
