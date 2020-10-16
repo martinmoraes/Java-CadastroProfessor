@@ -13,7 +13,7 @@ public class DaoProfessor {
 	final String INSERE_PROFESSOR = "INSERT INTO aula.professor	(nome,	fone) VALUES (?, ?);";
 	final String LISTA_PROFESSORES = "SELECT * FROM aula.professor;";
 	final String MEU_CODIGO = "SELECT * FROM aula.professor;";
-	
+	final String OUTRO_CODIGO = "SELECT * FROM aula.professor;";
 
 	public int inserirProfessor(Professor professor) {
 		try(Connection cnx = new ConexaoMySQL().getConexion();){
