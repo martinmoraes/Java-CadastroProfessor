@@ -16,7 +16,6 @@ public class DaoProfessor {
 	
 
 	public int inserirProfessor(Professor professor) {
-		
 		try(Connection cnx = new ConexaoMySQL().getConexion();){
 			PreparedStatement pst = cnx.prepareStatement(INSERE_PROFESSOR);
 			pst.setString(1, professor.getNome());
